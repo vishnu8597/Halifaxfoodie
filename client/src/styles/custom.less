@@ -1,0 +1,204 @@
+//! Fix Div
+
+.sdp-fix-div {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+//! SVGs
+
+.sdp-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.sdp-svg-lg {
+  width: 48px;
+  height: 48px;
+}
+
+.sdp-svg-sm {
+  width: 16px;
+  height: 16px;
+}
+
+//! Text Alignment
+
+.sdp-text-center {
+  text-align: center;
+}
+
+//! Font
+
+.sdp-text-strong {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sdp-font-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+}
+
+//! Scrollbar
+
+.sdp-scrollbar {
+  ::-webkit-scrollbar {
+    width: @scrollbar-width;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: @scrollbar-track-background;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: @scrollbar-color;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: @scrollbar-hover-color;
+  }
+}
+
+//! Loadig & Error
+
+.sdp-loading-wrapper,
+.sdp-error-wrapper {
+  height: calc(100vh - 104px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sdp-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .ant-result-image {
+    margin: unset;
+  }
+}
+
+.profile {
+  height: calc(100vh - 144px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    object-fit: cover;
+    margin: 0.5rem 0;
+  }
+  button {
+    width: 200px;
+  }
+}
+
+.restaurant-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.px {
+  padding: 0.5rem 0;
+}
+
+.mx-1 {
+  margin: 1rem 0;
+}
+
+.heading {
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  .add-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    .ant-typography {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-logo {
+  width: 200px;
+}
+
+.food-photos {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mx-8 {
+  margin: 0 0.5rem;
+}
+
+.sdp-wc {
+  height: calc(100vh - 104px);
+  width: 100%;
+  object-fit: contain;
+}
+
+.similar-recipe {
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 0 24px;
+    }
+  }
+}
